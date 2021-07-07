@@ -1,0 +1,8 @@
+{
+  "$schema": "./map.schema.json",
+  "dotfiles": [
+    {
+      "path": ".zshrc"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+  {
+    "$schema": "http://json-schema.org/schema",
+    "properties": {
+      "dotfiles": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "A snappy title"
+            },
+            "path": {
+              "type": "string",
+              "description": "From the home dir (~/$HOME)"
+            }
+          }
+        }
+      }
+    }
+  }
