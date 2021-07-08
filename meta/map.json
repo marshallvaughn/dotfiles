@@ -3,6 +3,18 @@
   "dotfiles": [
     {
       "path": ".zshrc"
+    },
+    {
+      "path": ".zprofile"
+    },
+    {
+      "path": ".gitconfig"
+    },
+    {
+      "path": ".gitignore_global"
+    },
+    {
+      "path": ".stCommitMsg"
     }
   ]
 }

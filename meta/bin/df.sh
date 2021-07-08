@@ -14,6 +14,7 @@ export COLOR_BLACK='\033[0;30m'
 export COLOR_NC='\033[0m'
 
 logg() {
+  DATE_NOW=$(date +%H:%M:%S)
   printf "${COLOR_CYAN}[${COLOR_BLACK}$(date +%H:%M:%S)${COLOR_CYAN}]${COLOR_NC}: ${@}"
 }
 
