@@ -47,11 +47,11 @@ confirm() {
 
 if [[ $# -ne 0 ]] ; then
   if [[ $1 == "pull" ]] ; then
-    df:pull
+    df:pull && exit 0
     # PROMPT_MESSAGE="This will pull local dotfiles into this project. Continue? (y/n): "
     # confirm "$PROMPT_MESSAGE" && df:pull
   elif [[ $1 == "install" ]] ; then
-    df:install
+    df:install && exit 0
     # PROMPT_MESSAGE="This will install project dotfiles to your machine at their respective paths. Continue? (y/n): "
     # confirm "$PROMPT_MESSAGE" && df:install
   else
