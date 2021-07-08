@@ -2,13 +2,29 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Refresh dotfiles",
-      "command": "echo hello",
+      "label": "df:pull",
+      "detail": "Pull files from this machine to local project.",
+      "command": "${workspaceFolder}/meta/bin/df.sh",
       "type": "shell",
-      "args": [],
-      "problemMatcher": [
-        "$tsc"
+      "promptOnClose": true,
+      "args": [
+        "pull"
       ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always"
+      },
+      "group": "none"
+    },
+    {
+      "label": "df:install",
+      "detail": "Install files from local project to this machine.",
+      "command": "${workspaceFolder}/meta/bin/df.sh",
+      "type": "shell",
+      "args": [
+        "install"
+      ],
+      "problemMatcher": [],
       "presentation": {
         "reveal": "always"
       },

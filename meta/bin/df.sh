@@ -47,11 +47,13 @@ confirm() {
 
 if [[ $# -ne 0 ]] ; then
   if [[ $1 == "pull" ]] ; then
-    PROMPT_MESSAGE="This will pull local dotfiles into this project. Continue? (y/n): "
-    confirm "$PROMPT_MESSAGE" && df:pull
+    df:pull
+    # PROMPT_MESSAGE="This will pull local dotfiles into this project. Continue? (y/n): "
+    # confirm "$PROMPT_MESSAGE" && df:pull
   elif [[ $1 == "install" ]] ; then
-    PROMPT_MESSAGE="This will install project dotfiles to your machine at their respective paths. Continue? (y/n): "
-    confirm "$PROMPT_MESSAGE" && df:install
+    df:install
+    # PROMPT_MESSAGE="This will install project dotfiles to your machine at their respective paths. Continue? (y/n): "
+    # confirm "$PROMPT_MESSAGE" && df:install
   else
     logg "Couldn't find a command for '${@}'. Exiting.\n"
     exit 1
